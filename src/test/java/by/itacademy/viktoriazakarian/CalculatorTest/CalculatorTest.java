@@ -35,4 +35,34 @@ public class CalculatorTest {
     public void testSum6() {
         Assertions.assertEquals(-7.5, new Calculator().sum(-8.4, 0.9));
     }
+
+    @Test
+    public void testSub1() {
+        Assertions.assertEquals(4, new Calculator().subtraction(5, 1));
+    }
+
+    @Test
+    public void testSub2() {
+        Assertions.assertEquals(-8, new Calculator().subtraction(-2, 6));
+    }
+
+    @Test
+    public void testSub3() {
+        Assertions.assertEquals(0, new Calculator().subtraction(0, 0));
+    }
+
+    @Test
+    public void testSub4() {
+        Assertions.assertEquals(9.5, new Calculator().subtraction(10.0, 0.5));
+    }
+
+    @Test
+    public void testSub5() {
+        Assertions.assertEquals(-3.0, new Calculator().subtraction(5.1, 8.1));
+    }
+
+    @Test
+    public void testSub6() {
+        Assertions.assertEquals(0.0, new Calculator().subtraction(0.0, 0.0));
+    }
 }
