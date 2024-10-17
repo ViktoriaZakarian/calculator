@@ -95,4 +95,34 @@ public class CalculatorTest {
     public void testMult6() {
         Assertions.assertEquals(0.0, new Calculator().multiplication(0.0,5.8));
     }
+
+    @Test
+    public void testDiv1() {
+        Assertions.assertEquals(2, new Calculator().division(10,5));
+    }
+
+    @Test
+    public void testDiv2() {
+        Assertions.assertEquals(-1, new Calculator().division(-10,10));
+    }
+
+    @Test
+    public void testDiv3() {
+        Assertions.assertEquals(0, new Calculator().division(0,5));
+    }
+
+    @Test
+    public void testDiv4() {
+        Assertions.assertEquals(2.5, new Calculator().division(10.0,4.0));
+    }
+
+    @Test
+    public void testDiv5() {
+        Assertions.assertEquals(-7.0, new Calculator().division(7.0,-1.0));
+    }
+
+    @Test
+    public void testDiv6() {
+        Assertions.assertEquals(0.0, new Calculator().division(0.0,-5.3));
+    }
 }
