@@ -9,28 +9,34 @@ public class Calculator {
         return a + b;
     }
 
-    public int subtraction(int a, int b) {
+    public int subtract(int a, int b) {
         return a - b;
     }
 
-    public double subtraction(double a, double b) {
+    public double subtract(double a, double b) {
         return a - b;
     }
 
-    public int multiplication(int a, int b) {
+    public int multiply(int a, int b) {
         return a * b;
     }
 
-    public double multiplication(double a, double b) {
+    public double multiply(double a, double b) {
         return a * b;
     }
 
 
-    public int division(int a, int b) {
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("На ноль делить нельзя");
+        }
         return a / b;
     }
 
-    public double division(double a, double b) {
+    public double divide(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("На ноль делить нельзя");
+        }
         return a / b;
     }
 }
